@@ -1,0 +1,21 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/c_src/**",
+                "/Users/barry.robinson/erlang/21.3.8.21/erts-10.3.5.16/include"
+            ],
+            "defines": [],
+            "macFrameworkPath": [
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+            ],
+            "compilerPath": "/usr/bin/clang",
+            "cStandard": "c11",
+            "cppStandard": "c++17",
+            "intelliSenseMode": "macos-clang-x64"
+            // "compileCommands": "${workspaceFolder}/_build/default/lib/jiffy/compile_commands.json"
+        }
+    ],
+    "version": 4
+}
