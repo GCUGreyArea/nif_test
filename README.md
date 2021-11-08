@@ -8,16 +8,20 @@ Directory structure
 --------------------
 
     nif_test
+    ├── LICENSE
+    ├── Makefile
+    ├── README.md
     ├── c_src
     │   ├── Makefile
     │   ├── nif_func.cpp
-    |   └── nif_func.h
-    ├── rebar.config
+    │   └── nif_func.h
     ├── priv
-    │   └── nif_test.so
-    └── src
-        ├── nif_test.app.src
-        └── nif_test.erl
+    ├── rebar.config
+    ├── src
+    │   ├── nif_test.app.src
+    │   └── nif_test.erl
+    └── test
+        └── test_NIF.erl
 
 This structure can be easily initialized using Rebar3:
 
@@ -30,11 +34,17 @@ Build:
 
     $ rebar3 compile
 
-Run shell
----------
+Run shell:
+----------
     $ rebar3 shell
+
+
+Run tests:
+----------
+    $ rebar3 eunit
 
 Web Resources
 -------------
 * [Getting started with Rebar3](https://rebar3.readme.io/docs/getting-started)
 * [Erlang NIF tutorial](https://sodocumentation.net/erlang/topic/5274/nifs)
+* [Erlang EUnit unit test framework](https://www.erlang.org/doc/apps/eunit/chapter.html)
